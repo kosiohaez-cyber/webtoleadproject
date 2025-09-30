@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <title>Contact Support</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            background: white;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .container h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        input[type="submit"] {
+            background-color: #0288d1;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #026fa4;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto 20px;
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+   <img src="logo.jpg" alt="Your Logo" style="width:120px; margin-bottom:20px;">
+    <h2>Contact Support</h2>
+
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00Daj00000a2HhZ" method="POST">
+        <input type="hidden" name="orgid" value="00Daj00000a2HhZ">
+        <input type="hidden" name="retURL" value="http://google.com">
+
+        <label for="name">Contact Name</label>
+        <input id="name" maxlength="80" name="name" size="20" type="text" />
+
+        <label for="email">Email</label>
+        <input id="email" maxlength="80" name="email" size="20" type="text" />
+
+        <label for="subject">Subject</label>
+        <input id="subject" maxlength="80" name="subject" size="20" type="text" />
+
+        <label for="description">Description</label>
+        <textarea name="description"></textarea>
+
+        <label for="type">Type</label>
+        <select id="type" name="type">
+            <option value="">--None--</option>
+            <option value="Mechanical">Mechanical</option>
+            <option value="Electrical">Electrical</option>
+            <option value="Electronic">Electronic</option>
+            <option value="Structural">Structural</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="product">Product</label>
+        <select id="00Naj00001f28ZG" name="00Naj00001f28ZG" title="Product">
+            <option value="">--None--</option>
+            <option value="GC1040">GC1040</option>
+            <option value="GC1060">GC1060</option>
+            <option value="GC3020">GC3020</option>
+            <option value="GC3040">GC3040</option>
+            <option value="GC3060">GC3060</option>
+            <option value="GC5020">GC5020</option>
+            <option value="GC5040">GC5040</option>
+            <option value="GC5060">GC5060</option>
+            <option value="GC1020">GC1020</option>
+        </select>
+
+        <input type="submit" name="submit" value="Submit Case">
+    </form>
+</div>
+
+</body>
+</html>
